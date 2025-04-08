@@ -5,3 +5,14 @@
 /.vs
 /FinTrackNewZen/.vs/FinTrackNewZen
 /FinTrackNewZen/FinTrackNewZen.Web/obj
+/FinTrackNewZen/FinTrackNewZen.DataAccess/bin/Debug/net8.0
+/FinTrackNewZen/FinTrackNewZen.DataAccess/obj
+/FinTrackNewZen/FinTrackNewZen.DB/bin/Debug
+/FinTrackNewZen/FinTrackNewZen.DB/obj/Debug
+/FinTrackNewZen/FinTrackNewZen.DTO/bin/Debug/net8.0
+/FinTrackNewZen/FinTrackNewZen.DTO/obj
+/FinTrackNewZen/FinTrackNewZen.Services/bin/Debug/net8.0
+/FinTrackNewZen/FinTrackNewZen.Services/obj
+/FinTrackNewZen/FinTrackNewZen.Utils/bin/Debug/net8.0
+/FinTrackNewZen/FinTrackNewZen.Utils/obj
+/FinTrackNewZen/FinTrackNewZen.Web/bin/Debug/net8.0
