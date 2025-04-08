@@ -56,5 +56,27 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="Views" />
+    <Folder Include="Functions" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\PostDeploy" />
+    <Folder Include="Scripts\PreDeploy" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Federation.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\PostDeploy\FinTrackNewZen.Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\PreDeploy\FinTrackNewZen.Script.PreDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="FinTrackNewZen.DB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FinTrackNewZen.DB.publish.xml" />
   </ItemGroup>
 </Project>

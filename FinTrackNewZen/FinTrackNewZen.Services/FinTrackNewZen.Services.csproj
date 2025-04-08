@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FinTrackNewZen.DataAccess\FinTrackNewZen.DataAccess.csproj" />
+    <ProjectReference Include="..\FinTrackNewZen.DTO\FinTrackNewZen.DTO.csproj" />
+    <ProjectReference Include="..\FinTrackNewZen.Utils\FinTrackNewZen.Utils.csproj" />
+  </ItemGroup>
+
 </Project>

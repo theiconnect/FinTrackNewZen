@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FinTrackNewZen.DTO\FinTrackNewZen.DTO.csproj" />
+  </ItemGroup>
+
 </Project>
