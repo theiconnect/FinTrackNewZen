@@ -66,6 +66,14 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Federation.sql" />
+    <Build Include="Tables\StatusMaster.sql" />
+    <Build Include="Tables\AccountTypeMaster.sql" />
+    <Build Include="Tables\DocumentTypeMaster.sql" />
+    <Build Include="Tables\FederationBankAccount.sql" />
+    <Build Include="Tables\FederationDocument.sql" />
+    <Build Include="Tables\Department.sql" />
+    <Build Include="Tables\Designation.sql" />
+    <Build Include="Tables\Employee.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeploy\FinTrackNewZen.Script.PostDeployment.sql" />
@@ -78,5 +86,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="FinTrackNewZen.DB.publish.xml" />
+    <None Include="Ranjith.FinTrackNewZen.DB.publish.xml" />
   </ItemGroup>
 </Project>

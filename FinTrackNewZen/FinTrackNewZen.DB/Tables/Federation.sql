@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo.[Federation]
+﻿CREATE TABLE [dbo].[Federation]
 (
 	FederationIdPk INT NOT NULL IDENTITY(1, 1) PRIMARY KEY, 
     FederationName VARCHAR(256) NOT NULL, 
