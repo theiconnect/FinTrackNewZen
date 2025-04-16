@@ -10,11 +10,11 @@ namespace FinTrackNewZen.Web.Controllers
         {
             _logger = logger;
         }
-        public IActionResult ViewFederation()
+        public ActionResult ViewFederation()
         {
             return View();
         }
-        public IActionResult EditFederation()
+        public ActionResult EditFederation()
         {
             return View();
         }
