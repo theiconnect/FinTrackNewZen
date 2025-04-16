@@ -1,9 +1,9 @@
 ﻿<header>
 
     <div class="container-fluid px-5 py-3 mr-6 d-flex justify-content-between align-items-center">
-        <input type="text" class="form-control w-auto fddetails" value="FedarationDetails" readonly />
+        
 
-        <a class="btn btn-primary" href="@Url.Action("EditFederation","Federation")">Edit</a>
+        <a class="btn btn-primary" href="@Url.Action("EditFederation","Federation")">Edit Federation</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,7 @@
 <div class="container">
 
         <div class="container mt-4">
-            <h3 class="mb-4">Federation Details</h3>
+            <h3 class="mb-4">View Federation </h3>
 
             
                 <div class="row mb-3">
@@ -46,70 +46,66 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <label for="registrationNumber" class="form-label">Registration Number :</label>
-                        <label for="federationName" class="form-label">
-                            <strong>#2556764</strong>
-                        </label>
-                    </div>
-                    <div class="col-md-6">
                         <label for="address" class="form-label">Email :</label>
                         <label for="address" class="form-label"><strong>abc@gmail.com</strong> </label>
 
                     </div>
-                </div>
-                <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="registrationNumber" class="form-label">Website :</label>
                         <label for="federationName" class="form-label">
                             <strong>www.abc.com</strong>
                         </label>
                     </div>
+                </div>
+                <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="address" class="form-label">AddressLine1 :</label>
                         <label for="address" class="form-label"><strong>4-712-25</strong> </label>
 
                     </div>
-                </div>
-                <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="registrationNumber" class="form-label">AddressLine2 :</label>
                         <label for="federationName" class="form-label">
                             <strong>abcd</strong>
                         </label>
                     </div>
+                </div>
+                <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="address" class="form-label">Street :</label>
                         <label for="address" class="form-label"><strong>SR Nagar</strong> </label>
 
                     </div>
-                </div><div class="row mb-3">
                     <div class="col-md-6">
                         <label for="address" class="form-label">LandMark :</label>
                         <label for="address" class="form-label"><strong>Near abc</strong> </label>
-                        
+
                     </div>
+                </div>
+                <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="registrationNumber" class="form-label">City :</label>
                         <label for="federationName" class="form-label">
                             <strong>Hydarabad</strong>
                         </label>
+                    </div>
+                    <div class="col-md-6">
+                            <label for="address" class="form-label">State :</label>
+                            <label for="address" class="form-label"><strong>Telangana</strong> </label>
+
                        
                     </div>
                 </div>
-        </div><div class="row mb-3">
-            <div class="col-md-6">
-                <label for="address" class="form-label">State :</label>
-                <label for="address" class="form-label"><strong>Telangana</strong> </label>
+               </div>
+               <div class="row mb-3">
+                    <div class="col-md-6">
 
-                
-            </div>
-            <div class="col-md-6">
-                <label for="registrationNumber" class="form-label">Pincode :</label>
-                <label for="federationName" class="form-label">
-                    <strong>518000</strong>
-                </label>
-
-            </div>
+                        <label for="registrationNumber" class="form-label">Pincode :</label>
+                        <label for="federationName" class="form-label">
+                            <strong>518000</strong>
+                        </label>
+                    </div>
+            
         </div>
                    
 
@@ -129,7 +125,7 @@
                     <th>Name</th>
                     <th>Account number</th>
                     <th>Bank Address</th>
-                    <th>Action </th>
+                    @* <th>Action </th> *@
                 </tr>
             </thead>
             <tbody id="bankDetailsTableBody">
@@ -141,10 +137,10 @@
                     <td>Main Road, Hyderabad</td>
 
 
-                    <td>
+                  @*   <td>
                         <button class="btn btn-warning" onclick="editField('bankName')">Edit</button>
                         <button class="btn btn-danger" onclick="deleteField('bankName')">Delete</button>
-                    </td>
+                    </td> *@
 
                 </tr>
                 <!-- New rows will be inserted here -->
@@ -152,98 +148,8 @@
         </table>
 
         <!-- Button to reveal the form -->
-        <div class="d-flex gap-3 mb-3">
+      @*   <div class="d-flex gap-3 mb-3">
             <button type="button" class="btn btn-outline-primary" onclick="toggleBankForm()">Add Bank Details</button>
             <button type="button" class="btn btn-success" onclick="addBankDetails()">Save</button>
-        </div>
-        <!-- Hidden form to add new bank entry -->
-        <div id="bankFormSection" class="p-4 border rounded bg-light shadow-sm" style="display: none;">
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <label for="bankName" class="form-label">Bank Name</label>
-                    <input type="text" class="form-control" id="bankName" placeholder="Enter Bank Name">
-                </div>
-                <div class="col-md-4">
-                    <label for="ifscCode" class="form-label">IFSC Code</label>
-                    <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC Code">
-                </div>
-                <div class="col-md-4">
-                    <label for="ifscCode" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC Code">
-                </div>
-                <div class="col-md-4">
-                    <label for="ifscCode" class="form-label">Account Nmber</label>
-                    <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC Code">
-                </div>
-                <div class="col-md-4">
-                    <label for="bankAddress" class="form-label">Bank Address</label>
-                    <input type="text" class="form-control" id="bankAddress" placeholder="Enter Bank Address">
-                </div>
-            </div>
-
-
-            <div class="col-md-4 mb-3">
-                <label for="bankName" class="form-label">Bank Name</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="bankName" placeholder="Enter Bank Name">
-                    @*        <button class="btn btn-warning" onclick="editField('bankName')">Edit</button>
-                        <button class="btn btn-danger" onclick="deleteField('bankName')">Delete</button *@>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <label for="ifscCode" class="form-label">IFSC Code</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC Code">
-                    <button class="btn btn-warning" onclick="editField('ifscCode')">Edit</button>
-                    <button class="btn btn-danger" onclick="deleteField('ifscCode')">Delete</button>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <label for="name" class="form-label">Name</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="name" placeholder="Enter Name">
-                    <button class="btn btn-warning" onclick="editField('name')">Edit</button>
-                    <button class="btn btn-danger" onclick="deleteField('name')">Delete</button>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <label for="accountNumber" class="form-label">Account Number</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="accountNumber" placeholder="Enter Account Number">
-                    <button class="btn btn-warning" onclick="editField('accountNumber')">Edit</button>
-                    <button class="btn btn-danger" onclick="deleteField('accountNumber')">Delete</button>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-3">
-                <label for="bankAddress" class="form-label">Bank Address</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="bankAddress" placeholder="Enter Bank Address">
-                    <button class="btn btn-warning" onclick="editField('bankAddress')">Edit</button>
-                    <button class="btn btn-danger" onclick="deleteField('bankAddress')">Delete</button>
-                </div>
-            </div>
-
-            <script>
-                function editField(id) {
-                    const input = document.getElementById(id);
-                    input.removeAttribute('readonly');
-                    input.focus();
-                }
-
-                function deleteField(id) {
-                    const input = document.getElementById(id);
-                    input.value = '';
-                }
-            </script>
-
-            <button type="button" class="btn btn-success" onclick="addBankDetails()">Save</button>
-        </div>
+        </div> *@
     </div>
-
-
-
-</div>
