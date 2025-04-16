@@ -1,0 +1,227 @@
+﻿@{
+    Layout = "~/Views/Shared/_FederationLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UIFedarationDetails</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+@*     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+ *@@*     <link rel="stylesheet" href="~/css/viewFed.css" asp-append-version="true" />
+ *@</head>
+<body>
+    <header>
+
+        <div class="container-fluid px-5 py-3 mr-6 d-flex justify-content-between align-items-center">
+            <input type="text" class="form-control w-auto fddetails" value="UIFedarationDetails" readonly />
+
+            <a class="btn btn-primary" href="@Url.Action("EditFederation", "Home")">Edit</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+
+
+    </header>
+    <div class="container">
+
+
+        <main role="main" class="pb-3">
+            <div class="container mt-4">
+                <h3 class="mb-4">Federation Details</h3>
+
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="federationName" class="form-label">Federation Name</label>
+                            <input type="text" class="form-control" id="federationName" placeholder="Enter Federation Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="registrationDate" class="form-label">Registration Date</label>
+                            <input type="date" class="form-control" id="registrationDate">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="registrationNumber" class="form-label">Registration Number</label>
+                            <input type="text" class="form-control" id="registrationNumber" placeholder="Enter Registration Number">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter Address">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="pinCode" class="form-label">Pin Code</label>
+                            <input type="text" class="form-control" id="pinCode" placeholder="Enter Pin Code">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="city" class="form-label">City</label>
+                            <select class="form-select" id="city">
+                                <option selected disabled>Select City</option>
+                                <option>Hydrabad</option>
+                                <option>City Warangal</option>
+
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="district" class="form-label">District</label>
+                            <select class="form-select" id="district">
+                                <option selected disabled>Select District</option>
+                                <option>District karimnagar</option>
+                                <option>District siricilla</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success mt-3">Submit</button>
+                </form>
+            </div>
+        </main>
+
+
+        <div class="container mt-5">
+            <h4 class="mb-3">Bank Details</h4>
+
+            <!-- Table showing added bank records (initially empty or prefilled with sample row) -->
+            <table class="table table-bordered table-striped">
+                <thead class="table-light">
+                    <tr>
+                        <th>Bank Name</th>
+                        <th>IFSC Code</th>
+                        <th>Name</th>
+                        <th>Account number</th>
+                        <th>Bank Address</th>
+                        <th>Action </th>
+                    </tr>
+                </thead>
+                <tbody id="bankDetailsTableBody">
+                    <tr>
+                        <td>State Bank of India</td>
+                        <td>SBIN0001234</td>
+                        <td>Name</td>
+                        <td>Account Number</td>
+                        <td>Main Road, Hyderabad</td>
+
+
+                        <td>
+                            <button class="btn btn-warning" onclick="editField('bankName')">Edit</button>
+                            <button class="btn btn-danger" onclick="deleteField('bankName')">Delete</button>
+                        </td>
+
+                    </tr>
+                    <!-- New rows will be inserted here -->
+                </tbody>
+            </table>
+
+            <!-- Button to reveal the form -->
+            <div class="d-flex gap-3 mb-3">
+                <button type="button" class="btn btn-outline-primary" onclick="toggleBankForm()">Add Bank Details</button>
+                <button type="button" class="btn btn-success" onclick="addBankDetails()">Save</button>
+            </div>
+            <!-- Hidden form to add new bank entry -->
+            <div id="bankFormSection" class="p-4 border rounded bg-light shadow-sm" style="display: none;">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="bankName" class="form-label">Bank Name</label>
+                        <input type="text" class="form-control" id="bankName" placeholder="Enter Bank Name">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ifscCode" class="form-label">IFSC Code</label>
+                        <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC Code">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ifscCode" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC Code">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ifscCode" class="form-label">Account Nmber</label>
+                        <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC Code">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="bankAddress" class="form-label">Bank Address</label>
+                        <input type="text" class="form-control" id="bankAddress" placeholder="Enter Bank Address">
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-3">
+                    <label for="bankName" class="form-label">Bank Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="bankName" placeholder="Enter Bank Name">
+                        @*        <button class="btn btn-warning" onclick="editField('bankName')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteField('bankName')">Delete</button *@>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="ifscCode" class="form-label">IFSC Code</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC Code">
+                        <button class="btn btn-warning" onclick="editField('ifscCode')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteField('ifscCode')">Delete</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                        <button class="btn btn-warning" onclick="editField('name')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteField('name')">Delete</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="accountNumber" class="form-label">Account Number</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="accountNumber" placeholder="Enter Account Number">
+                        <button class="btn btn-warning" onclick="editField('accountNumber')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteField('accountNumber')">Delete</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="bankAddress" class="form-label">Bank Address</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="bankAddress" placeholder="Enter Bank Address">
+                        <button class="btn btn-warning" onclick="editField('bankAddress')">Edit</button>
+                        <button class="btn btn-danger" onclick="deleteField('bankAddress')">Delete</button>
+                    </div>
+                </div>
+
+                <script>
+                    function editField(id) {
+                        const input = document.getElementById(id);
+                        input.removeAttribute('readonly');
+                        input.focus();
+                    }
+
+                    function deleteField(id) {
+                        const input = document.getElementById(id);
+                        input.value = '';
+                    }
+                </script>
+
+                <button type="button" class="btn btn-success" onclick="addBankDetails()">Save</button>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
