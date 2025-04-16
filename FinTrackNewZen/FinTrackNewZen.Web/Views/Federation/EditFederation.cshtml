@@ -1,0 +1,183 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    ViewData["Title"] = "Edit Federation Details";
+}
+<h2>Edit Federation Details</h2>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="Edit.css">
+
+<div class="container">
+
+    <form id="bankForm">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="accountHolder" class="form-label">Federation Name</label>
+                <input type="text" class="form-control" id="accountHolder" value="B Venkateswarao">
+            </div>
+            <div class="col-md-6">
+                <label for="registrationDate" class="form-label">Registration Date</label>
+                <input type="date" class="form-control" id="registrationDate">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="registrationNumber" class="form-label">Registration Number</label>
+                <input type="text" class="form-control" id="registrationNumber" placeholder="Enter Registration Number">
+            </div>
+            <div class="col-md-6">
+                <label for="ContactNumber" class="form-label">ContactNumber</label>
+                <input type="text" class="form-control" id="ContactNumber" placeholder="Enter ContactNumber">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="Email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="Email" placeholder="Enter Email">
+            </div>
+            <div class="col-md-6">
+                <label for="Website" class="form-label">Website</label>
+                <input type="text" class="form-control" id="Website" placeholder="Enter Website">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="AddressLine1" class="form-label">AddressLine1 :</label>
+                <input type="text" class="form-control" id="AddressLine1" placeholder="Enter AddressLine1">
+            </div>
+            <div class="col-md-6">
+                <label for="AddressLine2" class="form-label">AddressLine2 :</label>
+                <input type="text" class="form-control" id="AddressLine2" placeholder="Enter AddressLine2">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="Street" class="form-label">Street :</label>
+                <input type="text" class="form-control" id="Street" placeholder="Enter Street">
+            </div>
+            <div class="col-md-6">
+                <label for="LandMark" class="form-label">LandMark :</label>
+                <input type="text" class="form-control" id="LandMark" placeholder="Enter LandMark">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="City" class="form-label">City :</label>
+                <input type="text" class="form-control" id="City" placeholder="Enter City">
+            </div>
+            <div class="col-md-6">
+                <label for="State" class="form-label">State</label>
+                <select class="form-select" id="State">
+                    <option hidden>Select State</option>
+                    <option>Telangana</option>
+                    <option>Andhra Pradhesh</option>
+
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <h2>Edit Bank Details</h2>
+            <form id="bankForm">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="Street" class="form-label">Account Holder Name :</label>
+                        <input type="text" class="form-control" id="Street" placeholder="Enter Street">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="BankName" class="form-label">Bank Name :</label>
+                        <input type="text" class="form-control" id="BankName" placeholder="Enter BankName">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="AccountNumber" class="form-label">Account Number :</label>
+                        <input type="text" class="form-control" id="AccountNumber" placeholder="Enter AccountNumber">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="IFSCCode" class="form-label">IFSC Code :</label>
+                        <input type="text" class="form-control" id="IFSCCode" placeholder="Enter IFSCCode">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="AccountNumber" class="form-label">BankAddress :</label>
+                        <input type="text" class="form-control" id="AccountNumber" placeholder="Enter AccountNumber">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Isprimary" class="form-label">Isprimary :</label>
+                        <input type="text" class="form-control" id="IFSCCode" placeholder="Enter IFSCCode">
+                    </div>
+                </div>
+
+
+
+                <button type="submit" class="btn btn-success">Add</button>
+            </form>
+        </div>
+        <div class="container mt-5">
+            <h4 class="mb-3">Bank Details</h4>
+            <table class="table table-bordered table-striped">
+                <thead class="table-light">
+                    <tr>
+                        <th>Bank Name</th>
+                        <th>IFSC Code</th>
+                        <th>Name</th>
+                        <th>Account number</th>
+                        <th>Bank Address</th>
+                        <th>Action </th>
+                    </tr>
+                </thead>
+                <tbody id="bankDetailsTableBody">
+                    <tr>
+                        <td>State Bank of India</td>
+                        <td>SBIN0001234</td>
+                        <td>Name</td>
+                        <td>Account Number</td>
+                        <td>Main Road, Hyderabad</td>
+
+
+                        <td>
+                            <button class="btn btn-warning" onclick="editField('bankName')">Edit</button>
+                            <button class="btn btn-danger" onclick="deleteField('bankName')">Delete</button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+            <button type="submit" class="btn btn-success">Save Changes</button>
+            <a href="@Url.Action("ViewFederation","Federation")" class="btn btn-secondary">Cancel</a>
+
+            <script>
+                document.getElementById('bankForm').addEventListener('submit', function(e) {
+                  e.preventDefault(); // Prevent form reload
+
+                  // Collect form values (you can also save to localStorage if needed)
+                  const bankDetails = {
+                    accountHolder: document.getElementById('accountHolder').value,
+                    bankName: document.getElementById('bankName').value,
+                    accountNumber: document.getElementById('accountNumber').value,
+                    ifsc: document.getElementById('ifsc').value
+                  };
+
+                  console.log("Saving bank details:", bankDetails);
+
+                  // Simulate save delay (e.g., backend call)
+                  setTimeout(() => {
+                    alert("Fedration Bank details saved successfully!");
+                    window.location.href = "index.html"; // Redirect to main page
+                  }, 1000); // 1 second delay for effect
+                });
+            </script>
+        </div>
+    </form>
+</div>
+
+
+
