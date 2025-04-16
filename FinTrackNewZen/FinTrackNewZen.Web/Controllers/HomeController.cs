@@ -13,12 +13,12 @@ namespace FinTrackNewZen.Web.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult View()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Edit()
         {
             return View();
         }
