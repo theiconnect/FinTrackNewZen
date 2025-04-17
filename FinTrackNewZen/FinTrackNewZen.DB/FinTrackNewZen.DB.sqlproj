@@ -81,6 +81,7 @@
     <Build Include="Tables\GroupLeader.sql" />
     <Build Include="Tables\MemberDocument.sql" />
     <Build Include="Tables\EmployeeDocument.sql" />
+    <Build Include="Tables\User.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeploy\FinTrackNewZen.Script.PostDeployment.sql" />
