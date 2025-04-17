@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Verify OTP";
+    Layout = "~/Views/Shared/_AuthorizationLayout.cshtml";
+
+}
+<body>
+<h4 class="text-center mb-4">Verify OTP</h4>
+    <form id="verifyOTPForm" method="post" action="@Url.Action("VerifyOTP", "Authorization")">
+        <div class="mb-3">
+            <label for="emailPhone" class="form-label">Email / Phone</label>
+            <input type="text" class="form-control" id="emailPhone" value="@ViewBag.EmailPhone" readonly />
+        </div>
+        <div class="mb-3">
+            <label for="otp" class="form-label">Enter OTP sent to your Email/Phone</label>
+            <input type="text" class="form-control" id="otp" name="otp" placeholder="OTP" required />
+        </div>
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+        <div class="d-grid mb-3">
+            <button type="submit" class="btn btn-success">Verify</button>
+        </div>
+        <p class="text-center">
+            <a href="@Url.Action("ForgotPassword", "Authorization")">Resend OTP</a> |
+            <a href="@Url.Action("Login", "Authorization")">Back to Login</a>
+        </p>
+    </form>
+    @section Scripts {
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+}
+</body>

@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - FinTrackNewZen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(238, 238, 244);
+        }
+
+        .overall-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f7f7;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .main-header {
+            color: #eacc0c;
+            margin-bottom: 20px;
+        }
+
+        .content-container {
+            display: flex;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .logo-panel {
+            width: 40%;
+            background: #f9f7f7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .logo-panel img {
+            max-width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+        }
+
+        .form-panel {
+            width: 60%;
+            background: #fdfdfe;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-panel h4 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        .form-panel form {
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .form-control {
+            font-size: 14px;
+            padding: 8px 12px;
+        }
+
+        .btn {
+            font-size: 15px;
+            padding: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="overall-container">
+        <h2 class="main-header text-center mb-4">FinTrackNewZen</h2>
+        <div class="content-container">
+            <div class="logo-panel">
+                <img src="~/images/FinTrackNewZen.jpeg" alt="FinTrackNewZen Logo">
+            </div>
+            <div class="form-panel">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    @RenderSection("scripts", required: false)
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
