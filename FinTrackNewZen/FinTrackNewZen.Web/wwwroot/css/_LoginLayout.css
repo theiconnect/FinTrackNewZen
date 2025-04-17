@@ -1,0 +1,18 @@
+﻿body.login-body {
+    background-color: #f4f4fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-wrapper {
+    background-color: white;
+    max-width: 700px;
+}
+
+.logo-img {
+    width: 200px;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
