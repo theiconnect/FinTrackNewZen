@@ -1,0 +1,77 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 238, 244);
+}
+
+.overall-container {
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    align-items: center; /* Center the overall content horizontally */
+    background-color: #f9f7f7; /* Optional: Background for the entire container */
+    border-radius: 10px; /* Optional: Rounded corners for the container */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Optional: Shadow */
+    padding: 20px; /* Optional: Padding around the content */
+}
+
+.main-header {
+    color: #eacc0c; /* Example: Green color */
+    margin-bottom: 20px; /* Spacing between header and content */
+}
+
+.content-container {
+    display: flex; /* Enable two-column layout */
+    max-width: 800px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden; /* Clip content within rounded corners */
+}
+
+.logo-panel {
+    width: 40%; /* Adjust width as needed */
+    background: #f9f7f7; /* Optional: Background for the logo panel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Optional padding */
+}
+
+    .logo-panel img {
+        max-width: 100%;
+        max-height: 250px; /* Adjust max height as needed */
+        object-fit: contain;
+    }
+
+.form-panel {
+    width: 60%; /* Adjust width as needed */
+    background: #fdfdfe; /* Optional: Background for the form panel */
+    padding: 30px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .form-panel h4 {
+        color: #343a40;
+        margin-bottom: 20px;
+    }
+
+    .form-panel form {
+        width: 100%;
+        max-width: 350px;
+    }
+
+.form-control {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 8px 0;
+}
