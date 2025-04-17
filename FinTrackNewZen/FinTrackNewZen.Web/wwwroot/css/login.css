@@ -1,0 +1,25 @@
+﻿.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.logo-section {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 160px;
+}
+
+.form-section {
+    padding: 50px;
+}
+
+.heading-title {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
