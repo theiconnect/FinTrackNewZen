@@ -2,14 +2,25 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+<<<<<<< HEAD
+=======
+    Layout = "~/Views/Shared/_FederationLayout.cshtml";
+>>>>>>> origin/ranjith-ui-design-allmodules
     ViewData["Title"] = "Edit Federation Details";
 }
 <h2>Edit Federation Details</h2>
 
+<<<<<<< HEAD
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Edit.css">
 <form id="bankForm">
     <div class="container">       
+=======
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="Edit.css">
+<form id="bankForm">
+    <div class="container">
+>>>>>>> origin/ranjith-ui-design-allmodules
         <div class="row mb-3">
             <div class="col-md-6">
                 <label for="accountHolder" class="form-label">Federation Name</label>
@@ -20,7 +31,11 @@
                 <input type="date" class="form-control" id="registrationDate">
             </div>
         </div>
+<<<<<<< HEAD
          <div class="row mb-3">
+=======
+        <div class="row mb-3">
+>>>>>>> origin/ranjith-ui-design-allmodules
             <div class="col-md-6">
                 <label for="registrationNumber" class="form-label">Registration Number</label>
                 <input type="text" class="form-control" id="registrationNumber" placeholder="Enter Registration Number">
@@ -30,7 +45,11 @@
                 <input type="text" class="form-control" id="ContactNumber" placeholder="Enter ContactNumber">
             </div>
         </div>
+<<<<<<< HEAD
          <div class="row mb-3">
+=======
+        <div class="row mb-3">
+>>>>>>> origin/ranjith-ui-design-allmodules
             <div class="col-md-6">
                 <label for="Email" class="form-label">Email</label>
                 <input type="text" class="form-control" id="Email" placeholder="Enter Email">
@@ -68,6 +87,7 @@
             <div class="col-md-6">
                 <label for="State" class="form-label">State</label>
                 <select class="form-select" id="State">
+<<<<<<< HEAD
                     <option  hidden>Select State</option>
                     <option>Telangana</option>
 					<option>Andhra Pradhesh</option>
@@ -142,6 +162,82 @@
                     </tbody>
                 </table>                                
             </div>
+=======
+                    <option hidden>Select State</option>
+                    <option>Telangana</option>
+                    <option>Andhra Pradhesh</option>
+
+                </select>
+            </div>
+        </div>
+        <h2>Edit Bank Details</h2>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="AccountHolderName" class="form-label">Account Holder Name :</label>
+                <input type="text" class="form-control" id="AccountHolderName" placeholder="Enter AccountHolderName">
+            </div>
+            <div class="col-md-6">
+                <label for="BankName" class="form-label">Bank Name :</label>
+                <input type="text" class="form-control" id="BankName" placeholder="Enter BankName">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="AccountNumber" class="form-label">Account Number :</label>
+                <input type="text" class="form-control" id="AccountNumber" placeholder="Enter AccountNumber">
+            </div>
+            <div class="col-md-6">
+                <label for="IFSCCode" class="form-label">IFSC Code :</label>
+                <input type="text" class="form-control" id="IFSCCode" placeholder="Enter IFSCCode">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="BankAddress" class="form-label">BankAddress :</label>
+                <textarea class="form-control" id="BankAddress" rows="4" placeholder="Enter Bank Address"></textarea>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label d-block">Is Primary:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="IsPrimary" id="IsPrimaryYes" value="yes">
+                    <label class="form-check-label" for="IsPrimaryYes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="IsPrimary" id="IsPrimaryNo" value="no">
+                    <label class="form-check-label" for="IsPrimaryNo">No</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Add</button>
+        <div class="container mt-5">
+            <h4 class="mb-3">Bank Details</h4>
+            <table class="table table-bordered table-striped">
+                <thead class="table-light">
+                    <tr>
+                        <th>Bank Name</th>
+                        <th>IFSC Code</th>
+                        <th>Name</th>
+                        <th>Account number</th>
+                        <th>Bank Address</th>
+                        <th>Action </th>
+                    </tr>
+                </thead>
+                <tbody id="bankDetailsTableBody">
+                    <tr>
+                        <td>State Bank of India</td>
+                        <td>SBIN0001234</td>
+                        <td>Name</td>
+                        <td>Account Number</td>
+                        <td>Main Road, Hyderabad</td>
+                        <td>
+                            <button class="btn btn-warning" onclick="editField('bankName')">Edit</button>
+                            <button class="btn btn-danger" onclick="deleteField('bankName')">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+>>>>>>> origin/ranjith-ui-design-allmodules
         <button type="submit" class="btn btn-success">Save Changes</button>
         <a class="btn btn-primary" href="@Url.Action("ViewFederation","Federation")">Cancel</a>
         @* <a href="@Url.Action("ViewFederation","Federation")" class="btn btn-secondary">Cancel</a> *@
@@ -149,5 +245,9 @@
 </form>
 
 
+<<<<<<< HEAD
    
     
+=======
+
+>>>>>>> origin/ranjith-ui-design-allmodules

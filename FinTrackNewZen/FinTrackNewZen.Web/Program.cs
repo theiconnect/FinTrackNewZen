@@ -22,6 +22,10 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
+<<<<<<< HEAD
     pattern: "{controller=Federation}/{action=ViewFederation}/{id?}");
+=======
+    pattern: "{controller=Authorization}/{action=Login}/{id?}");
+>>>>>>> origin/ranjith-ui-design-allmodules
 
 app.Run();
