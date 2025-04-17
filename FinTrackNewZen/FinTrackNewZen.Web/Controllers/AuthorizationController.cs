@@ -73,7 +73,7 @@ namespace FinTrackNewZen.Web.Controllers
             if (newPassword == confirmPassword)
             {
                
-                return RedirectToAction("Login", "Authorization");
+               return RedirectToAction("Login", "Authorization");
             }
             else
             {
