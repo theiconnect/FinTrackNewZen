@@ -139,13 +139,8 @@
 .footer {
     background: linear-gradient(to right, #6a11cb, #f8f9fa);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
+    text-align: center;
     bottom: 0;
-    width: 100%;
-    z-index: 999;
 }
 
 
