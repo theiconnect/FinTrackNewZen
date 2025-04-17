@@ -74,6 +74,13 @@
     <Build Include="Tables\Department.sql" />
     <Build Include="Tables\Designation.sql" />
     <Build Include="Tables\Employee.sql" />
+    <Build Include="Tables\Branch.sql" />
+    <Build Include="Tables\Group.sql" />
+    <Build Include="Tables\GroupBankAccount.sql" />
+    <Build Include="Tables\GroupMember.sql" />
+    <Build Include="Tables\GroupLeader.sql" />
+    <Build Include="Tables\MemberDocument.sql" />
+    <Build Include="Tables\EmployeeDocument.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeploy\FinTrackNewZen.Script.PostDeployment.sql" />
