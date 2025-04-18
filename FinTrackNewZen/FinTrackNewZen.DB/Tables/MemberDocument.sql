@@ -1,19 +1,14 @@
 ﻿CREATE TABLE [dbo].[MemberDocument]
 (
-    MemberDocumentIdPk INT NOT NULL PRIMARY KEY identity (1,1),
-    DocumentName VARCHAR(256) NOT NULL, 
-    DocumentPath VARCHAR(256) NOT NULL,
-
-    GroupMemberIdFk INT NOT NULL,
-    CONSTRAINT FK_MemberDocument_GroupMember FOREIGN KEY (GroupMemberIdFk) REFERENCES GroupMember(GroupMemberIdPk),
-
-
-
-	DocumentTypeIdFk INT NOT NULL,
-	CONSTRAINT FK_MemberDocument_DocumentTypeMaster FOREIGN KEY (DocumentTypeIdFk) REFERENCES DocumentTypeMaster(DocumentTypeIdPk),
-
-
-	StatusIdFk  int Not Null ,
+    MemberDocumentIdPk  INT NOT NULL PRIMARY KEY IDENTITY (1,1),
+	DocumentTypeIdFk    INT NOT NULL,
+    DocumentName        VARCHAR(512) NOT NULL, 
+    DocumentPath        VARCHAR(MAX) NOT NULL,
+    MemberIdFk          INT NOT NULL,
+	StatusIdFk          INT NOT NULL,
+	
+    CONSTRAINT FK_MemberDocument_DocumentTypeMaster FOREIGN KEY (DocumentTypeIdFk) REFERENCES DocumentTypeMaster(DocumentTypeIdPk),
+    CONSTRAINT FK_MemberDocument_GroupMember FOREIGN KEY (MemberIdFk) REFERENCES GroupMember(MemberIdPk),
     CONSTRAINT FK_MemberDocument_StatusMaster FOREIGN KEY (StatusIdFk) REFERENCES StatusMaster([StatusIdPk])
 
 )

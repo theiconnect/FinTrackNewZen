@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Group]
 (
-	GroupIdPk INT NOT NULL PRIMARY KEY identity (1,1), 
-    GroupCode INT NOT NULL, 
-    GroupName VARCHAR(128) NOT NULL, 
-    CreationDate DATE NOT NULL, 
+	GroupIdPk       INT NOT NULL PRIMARY KEY identity (1,1), 
+    GroupCode       INT NOT NULL, 
+    GroupName       VARCHAR(128) NOT NULL, 
+    EstablishedOn   DATE NOT NULL, 
     MaxAllowedMembers int NOT NULL, 
 	
 	Mobile VARCHAR(128) NOT NULL, 
