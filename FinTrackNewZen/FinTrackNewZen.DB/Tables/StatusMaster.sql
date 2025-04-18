@@ -1,0 +1,7 @@
+﻿
+CREATE TABLE dbo.StatusMaster
+(
+	StatusIdPk INT NOT NULL PRIMARY KEY,
+	StatusCode VARCHAR(50) NOT NULL, 
+	Status VARCHAR(512) NOT NULL,
+)
