@@ -1,0 +1,184 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|c:\\users\\rj\\source\\repos\\fintrackdummy\\fintrackdummy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|solutionrelative:fintrackdummy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|c:\\users\\rj\\source\\repos\\fintrackdummy\\fintrackdummy\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|solutionrelative:fintrackdummy\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|c:\\users\\rj\\source\\repos\\fintrackdummy\\fintrackdummy\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|solutionrelative:fintrackdummy\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|c:\\users\\rj\\source\\repos\\fintrackdummy\\fintrackdummy\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|solutionrelative:fintrackdummy\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|c:\\users\\rj\\source\\repos\\fintrackdummy\\fintrackdummy\\views\\home\\viewfederation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|solutionrelative:fintrackdummy\\views\\home\\viewfederation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|c:\\users\\rj\\source\\repos\\fintrackdummy\\fintrackdummy\\views\\shared\\_federationlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|solutionrelative:fintrackdummy\\views\\shared\\_federationlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|c:\\users\\rj\\source\\repos\\fintrackdummy\\fintrackdummy\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|solutionrelative:fintrackdummy\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|c:\\users\\rj\\source\\repos\\fintrackdummy\\fintrackdummy\\views\\home\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|solutionrelative:fintrackdummy\\views\\home\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|c:\\users\\rj\\source\\repos\\fintrackdummy\\fintrackdummy\\views\\home\\editfederation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A84F5CD-7C78-43D3-BCD1-C4C4BF7F6FAD}|FinTrackDummy\\FinTrackDummy.csproj|solutionrelative:fintrackdummy\\views\\home\\editfederation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "FinTrackDummy\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "FinTrackDummy\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-11T08:42:55.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Program.cs",
+              "RelativeDocumentMoniker": "FinTrackDummy\\Program.cs",
+              "ToolTip": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Program.cs",
+              "RelativeToolTip": "FinTrackDummy\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T08:09:54.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditFederation.cshtml",
+              "DocumentMoniker": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Home\\EditFederation.cshtml",
+              "RelativeDocumentMoniker": "FinTrackDummy\\Views\\Home\\EditFederation.cshtml",
+              "ToolTip": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Home\\EditFederation.cshtml",
+              "RelativeToolTip": "FinTrackDummy\\Views\\Home\\EditFederation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T08:00:24.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "FinTrackDummy\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "FinTrackDummy\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T07:20:54.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FinTrackDummy\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FinTrackDummy\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T07:21:01.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_FederationLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Shared\\_FederationLayout.cshtml",
+              "RelativeDocumentMoniker": "FinTrackDummy\\Views\\Shared\\_FederationLayout.cshtml",
+              "ToolTip": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Shared\\_FederationLayout.cshtml",
+              "RelativeToolTip": "FinTrackDummy\\Views\\Shared\\_FederationLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T07:31:15.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ViewFederation.cshtml",
+              "DocumentMoniker": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Home\\ViewFederation.cshtml",
+              "RelativeDocumentMoniker": "FinTrackDummy\\Views\\Home\\ViewFederation.cshtml",
+              "ToolTip": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Home\\ViewFederation.cshtml",
+              "RelativeToolTip": "FinTrackDummy\\Views\\Home\\ViewFederation.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T07:30:24.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FinTrackDummy\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "FinTrackDummy\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T07:23:03.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Home\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "FinTrackDummy\\Views\\Home\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\rj\\source\\repos\\FinTrackDummy\\FinTrackDummy\\Views\\Home\\ForgotPassword.cshtml",
+              "RelativeToolTip": "FinTrackDummy\\Views\\Home\\ForgotPassword.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T08:13:32.736Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

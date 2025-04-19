@@ -4,17 +4,11 @@ namespace FinTrackNewZen.Web.Controllers
 {
     public class FederationController : Controller
     {
-        private readonly ILogger<FederationController> _logger;
-
-        public FederationController(ILogger<FederationController> logger)
-        {
-            _logger = logger;
-        }
-        public ActionResult ViewFederation()
+        public IActionResult ViewFederation()
         {
             return View();
         }
-        public ActionResult EditFederation()
+        public IActionResult EditFederation()
         {
             return View();
         }
