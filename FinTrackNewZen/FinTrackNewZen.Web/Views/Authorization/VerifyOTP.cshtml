@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Verify OTP";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+
+}
+
+<h4 class="text-center mb-4">Verify OTP</h4>
+<form id="verifyOTPForm" method="post" action="@Url.Action("VerifyOTP", "Authorization")">
+    <div class="mb-3">
+        <label for="emailPhone" class="form-label">Email / Phone</label>
+        <input type="text" class="form-control" id="emailPhone" value="mallika@gmail.com" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="otp" class="form-label">Enter OTP sent to your Email/Phone</label>
+        <input type="text" class="form-control" id="otp" placeholder="OTP" required />
+    </div>
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <div class="d-grid mb-3">
+        <button type="submit" class="btn btn-success">Verify</button>
+    </div>
+    <p class="text-center">
+        <a href="@Url.Action("ForgotPassword", "Authorization")">Resend OTP</a> |
+        <a href="@Url.Action("Login", "Authorization")">Back to Login</a>
+    </p>
+</form>
+
+@section Scripts {
+    <script src="~/js/verify-otp.js"></script>
+}
