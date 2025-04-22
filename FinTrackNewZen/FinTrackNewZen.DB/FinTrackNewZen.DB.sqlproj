@@ -90,9 +90,6 @@
     <PreDeploy Include="Scripts\PreDeploy\FinTrackNewZen.Script.PreDeployment1.sql" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="FinTrackNewZen.DB.refactorlog" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="FinTrackNewZen.DB.publish.xml" />
     <None Include="Ranjith.FinTrackNewZen.DB.publish.xml" />
     <None Include="Scripts\PostDeploy\LoadDepartments.sql" />
