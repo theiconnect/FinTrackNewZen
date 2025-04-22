@@ -74,6 +74,14 @@
     <Build Include="Tables\Department.sql" />
     <Build Include="Tables\Designation.sql" />
     <Build Include="Tables\Employee.sql" />
+    <Build Include="Tables\Branch.sql" />
+    <Build Include="Tables\Group.sql" />
+    <Build Include="Tables\GroupBankAccount.sql" />
+    <Build Include="Tables\GroupMember.sql" />
+    <Build Include="Tables\GroupLeader.sql" />
+    <Build Include="Tables\MemberDocument.sql" />
+    <Build Include="Tables\EmployeeDocument.sql" />
+    <Build Include="Tables\User.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeploy\FinTrackNewZen.Script.PostDeployment.sql" />
@@ -87,5 +95,11 @@
   <ItemGroup>
     <None Include="FinTrackNewZen.DB.publish.xml" />
     <None Include="Ranjith.FinTrackNewZen.DB.publish.xml" />
+    <None Include="Scripts\PostDeploy\LoadDepartments.sql" />
+    <None Include="Scripts\PostDeploy\LoadRoles.sql" />
+    <None Include="Scripts\PostDeploy\LoadDesignations.sql" />
+    <None Include="Scripts\PostDeploy\LoadStatusMaster.sql" />
+    <None Include="Scripts\PostDeploy\LoadAccountTypes.sql" />
+    <None Include="Scripts\PostDeploy\LoadDocumentTypes.sql" />
   </ItemGroup>
 </Project>
