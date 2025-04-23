@@ -82,15 +82,13 @@
     <Build Include="Tables\MemberDocument.sql" />
     <Build Include="Tables\EmployeeDocument.sql" />
     <Build Include="Tables\User.sql" />
+    <Build Include="Tables\RoleMaster.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeploy\FinTrackNewZen.Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <PreDeploy Include="Scripts\PreDeploy\FinTrackNewZen.Script.PreDeployment1.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="FinTrackNewZen.DB.refactorlog" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FinTrackNewZen.DB.publish.xml" />
@@ -101,5 +99,6 @@
     <None Include="Scripts\PostDeploy\LoadStatusMaster.sql" />
     <None Include="Scripts\PostDeploy\LoadAccountTypes.sql" />
     <None Include="Scripts\PostDeploy\LoadDocumentTypes.sql" />
+    <None Include="Scripts\PostDeploy\LoadUser.sql" />
   </ItemGroup>
 </Project>
