@@ -9,11 +9,11 @@
 <h4 class="text-center mb-4">Login</h4>
 <form id="loginForm" method="post" action="@Url.Action("Login", "Authorization")">
     <div class="mb-3">
-        <label for="emailPhone" class="form-label">Email/Phone</label>
+        <label for="emailPhone" class="form-label">Email/Phone<span style="color:red">*</span></label>
         <input type="text" id="emailPhone" name="emailPhone" class="form-control" placeholder="Email or Phone" required />
     </div>
     <div class="mb-3">
-        <label for="password" class="form-label">password</label>
+        <label for="password" class="form-label">Password<span style="color:red">*</span></label>
         <input type="password" id="password" name="password" class="form-control" placeholder="Password" required />
     </div>
     <p class="text-center">
