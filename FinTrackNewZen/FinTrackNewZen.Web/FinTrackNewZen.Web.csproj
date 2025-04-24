@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -9,7 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FinTrackNewZen.DTO\FinTrackNewZen.DTO.csproj" />
     <ProjectReference Include="..\FinTrackNewZen.Services\FinTrackNewZen.Services.csproj" />
-    <ProjectReference Include="..\FinTrackNewZen.Utils\FinTrackNewZen.Utils.csproj" />
+    <ProjectReference Include="..\FinTrackNewZen.Utils\FinTrackNewZen.Utils.csproj" />	  
   </ItemGroup>
 
 </Project>
