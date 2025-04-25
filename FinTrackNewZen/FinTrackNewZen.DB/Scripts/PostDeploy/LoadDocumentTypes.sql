@@ -3,7 +3,7 @@ USING (
     VALUES 
         (1, 'AADHAR', 'Aadhar Card'),
         (2, 'PAN', 'PAN Card'),
-        (3, 'DL', 'Driving License'),
+        (3, 'DRIVING_LICENSE', 'Driving License'),
         (4, 'PASSPORT', 'Passport'),
         (5, 'VOTERID', 'Voter ID'),
         (6, 'BANK_STMT', 'Bank Statement'),

@@ -1,28 +1,23 @@
-﻿INSERT INTO [dbo].[User]
-(
-    UserRole,
-    EmailAddress,
-    Phone,
-    [PasswordHash],
-    OTP,
-    CreatedByIdFk,
-    CreatedOn,
-    LastUpdatedByIdFk,
-    LastUpdatedOn,
-    EmployeeIdFk,
-    RoleIdFk
-)
-VALUES
-(
-    'Admin',                     
-    'admin@fintrack.com',       
-    '1234567890',               
-    'Welcome@01',               
-    '123456',                   
-    1,                          
-    GETDATE(),                  
-    NULL,                       
-    NULL,                       
-    1  ,
-    1
-);
+﻿IF NOT EXISTS (SELECT '' FROM dbo.[User] WHERE EmailAddress = 'admin@fintrack.com')
+BEGIN
+    INSERT INTO [dbo].[User]
+    (
+        EmailAddress,
+        Phone,
+        [PasswordHash],
+        CreatedByIdFk,
+        CreatedOn,
+        EmployeeIdFk,
+        RoleIdFk
+    )
+    VALUES
+    (
+        'admin@fintrack.com',       
+        '1234567890',               
+        'Welcome@01',               
+        1,                          
+        GETDATE(),                  
+        1,
+        1
+    );
+END

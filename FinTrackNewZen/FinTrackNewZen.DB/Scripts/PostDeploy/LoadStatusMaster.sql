@@ -18,7 +18,8 @@ USING (
         (15, 'DISBURSED', 'Loan Disbursed'),
         (16, 'EMI_SCHEDULED', 'EMI Schedule Generated'),
         (17, 'CLOSED', 'Closed / Pre-Closed'),
-        (18, 'REJECTED', 'Rejected / Declined')
+        (18, 'REJECTED', 'Rejected / Declined'),
+        (19, 'APPROVED', 'Approved')
 ) AS source (StatusIdPk, StatusCode, Status)
 ON target.StatusIdPk = source.StatusIdPk
 WHEN MATCHED THEN
