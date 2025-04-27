@@ -24,6 +24,9 @@
         align-items: center;
         height: 150px;
     }
+    .addbtn{
+        margin: 15px;
+    }
 
         .sidebar .logo img {
             border-radius: 50%;

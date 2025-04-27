@@ -9,7 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FinTrackNewZen.DTO\FinTrackNewZen.DTO.csproj" />
     <ProjectReference Include="..\FinTrackNewZen.Services\FinTrackNewZen.Services.csproj" />
-    <ProjectReference Include="..\FinTrackNewZen.Utils\FinTrackNewZen.Utils.csproj" />
+    <ProjectReference Include="..\FinTrackNewZen.Utils\FinTrackNewZen.Utils.csproj" />	  
   </ItemGroup>
 
 </Project>
