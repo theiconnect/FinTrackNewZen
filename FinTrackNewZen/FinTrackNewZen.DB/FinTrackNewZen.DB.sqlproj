@@ -83,6 +83,7 @@
     <Build Include="Tables\EmployeeDocument.sql" />
     <Build Include="Tables\User.sql" />
     <Build Include="Tables\RoleMaster.sql" />
+    <Build Include="Tables\MemberBankAccount.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeploy\FinTrackNewZen.Script.PostDeployment.sql" />
@@ -100,5 +101,7 @@
     <None Include="Scripts\PostDeploy\LoadAccountTypes.sql" />
     <None Include="Scripts\PostDeploy\LoadDocumentTypes.sql" />
     <None Include="Scripts\PostDeploy\LoadUser.sql" />
+    <None Include="Scripts\PostDeploy\LoadEmployee.sql" />
+    <None Include="Scripts\PostDeploy\LoadFederation.sql" />
   </ItemGroup>
 </Project>
