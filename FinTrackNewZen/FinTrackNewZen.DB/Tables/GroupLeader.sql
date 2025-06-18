@@ -17,7 +17,7 @@
 	StatusIdFk INT NOT NULL,
 	GroupIdFk INT NOT NULL,
 	
-	CONSTRAINT FK_GroupLeader_GroupMember FOREIGN KEY (GroupMemberIdFk) REFERENCES GroupMember(GroupMemberIdPk),
+	CONSTRAINT FK_GroupLeader_GroupMember FOREIGN KEY (GroupMemberIdFk) REFERENCES GroupMember(MemberIdPk),
     CONSTRAINT FK_GroupLeader_StatusMaster FOREIGN KEY (StatusIdFk) REFERENCES StatusMaster(StatusIdPk),
     CONSTRAINT FK_GroupLeader_Group FOREIGN KEY (GroupIdFk) REFERENCES [Group](GroupIdPk),
 
